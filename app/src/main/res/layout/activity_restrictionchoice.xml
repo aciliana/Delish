@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E3E4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:text="Select your Dietary Restriction"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/gray"
+        android:textSize="20sp"/>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+            <View android:id="@+id/fakeView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:id="@+id/spon1"
+                android:layout_margin="5dp"
+                android:background="@drawable/vegan"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/gluccontrol"
+                android:id="@+id/spon2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/spon1"
+                android:layout_toEndOf="@+id/spon1"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/glutfree"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon3"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon1"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/vegetarian"
+                android:layout_alignLeft="@id/fakeView"
+                android:id="@+id/spon4"
+                android:layout_below="@+id/spon2"
+                android:layout_marginTop="180dp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/lowsodium"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon5"
+                android:layout_below="@+id/spon3"
+                android:layout_alignLeft="@+id/spon3"
+                android:layout_alignStart="@+id/spon3"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/lowcarb"
+                android:layout_toRightOf="@+id/spon5"
+                android:layout_alignLeft="@id/fakeView"
+                android:id="@+id/spon6"
+                android:layout_below="@+id/spon4"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon7"
+                android:layout_margin="5dp"
+                android:layout_below="@id/spon5"
+                android:background="@drawable/lowfat"
+                android:layout_alignLeft="@+id/spon5"
+                android:layout_alignStart="@+id/spon5"
+                android:layout_marginTop="180dp" />
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_toRightOf="@+id/spon7"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon6"
+                android:id="@+id/spon8"
+                android:background="@drawable/lactfree"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:id="@id/go"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/green"
+                android:textColor="#FFFFFF"
+                android:text="GO"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/spon8"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
